@@ -5,7 +5,7 @@ import AddUser from "../../app/usecases/addUser.js";
 
 const routes = express.Router();
 
-// Retorna todos os usuários
+// Return all users
 routes.get("/users", (req, res) => {
   const listUser = new ListUser();
   const users = listUser.execute();
@@ -13,7 +13,7 @@ routes.get("/users", (req, res) => {
   res.send(users);
 });
 
-// Retorna o usuário por Id
+// Return users by id
 routes.get("/users/:id", (req, res) => {
   const id = req.params.id;
 
@@ -23,7 +23,7 @@ routes.get("/users/:id", (req, res) => {
   res.send(userById);
 });
 
-// Cria usuário
+// Create User
 routes.post("/users", (req, res) => {
   const { name, age } = req.body;
 

@@ -1,6 +1,6 @@
 const users = [{
   id: '85fsda575218',
-  name: "Usuário Padrão",
+  name: "Default User",
   age: 21,
 }]
 
